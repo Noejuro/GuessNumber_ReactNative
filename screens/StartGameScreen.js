@@ -4,6 +4,7 @@ import { View, Text, StyleSheet, Button, TouchableWithoutFeedback, Keyboard, Ale
 import Card from '../components/Card'
 import Input from '../components/Input'
 import NumberContainer from '../components/NumberContainer'
+import MainButton from '../components/MainButton'
 import Colors from '../constants/colors'
 import TextBold from '../components/TextFonts/TextBold'
 import TextRegular from '../components/TextFonts/TextRegular'
@@ -43,7 +44,7 @@ const StartGameScreen = props => {
             <Card style={styles.summaryContainer}>
                 <Text> You selected </Text>
                 <NumberContainer>{selectedNumber}</NumberContainer>
-                <Button title="START GAME" onPress={() => props.onStartGame(selectedNumber) } />
+                <MainButton onPress={() => props.onStartGame(selectedNumber) } >START GAME</MainButton>
             </Card>
         );
     }
@@ -77,7 +78,7 @@ const styles = StyleSheet.create({
     buttonContainer: { flexDirection: "row", width: "100%", justifyContent: "space-between", paddingHorizontal: 15 },
     button: { width: "45%" },
     input: { width: 35, textAlign: "center", marginBottom: 20, fontSize: 20 },
-    summaryContainer: { marginTop: 20, alignItems: "center", width: 200, maxWidth: "60%" }
+    summaryContainer: { marginTop: 20, alignItems: "center", width: 210, maxWidth: "60%" }
 });
 
 export default StartGameScreen;
