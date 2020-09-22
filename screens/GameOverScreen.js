@@ -25,7 +25,7 @@ const GameOverScreen = props => {
 };
 
 const styles = StyleSheet.create({
-    screen: {flex: 1, justifyContent: "center", alignItems: "center"},
+    screen: {flex: 1, justifyContent: "center", alignItems: "center", paddingVertical: 10},
     imageContainer: {width: Dimensions.get("window").width * 0.7, height: Dimensions.get("window").width * 0.7, borderRadius: Dimensions.get("window").width * 0.7 / 2, borderWidth: 5, borderColor: "black", overflow: "hidden", marginVertical: Dimensions.get("window").height / 40},
     image: { width: "100%", height: "100%"},
     highlight: { color: Colors.primary, fontFamily: 'open-sans-bold'}
